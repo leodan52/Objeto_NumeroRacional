@@ -12,13 +12,15 @@ def main():
 	print(f'El constructor tendrá como argumento {Numero}')
 
 	frac = Fraccion.Decimal_infinito_periodico(Numero)
-	frac2 = Fraccion(Numero2)
+	frac2 = Fraccion(Numero2, 3)
 	frac3 = Fraccion(numero3)
 
 	print(f'La representación del objeto quedó: {frac}')
 	print(f'{frac} / {frac2} = {frac / frac2}')
 
-	print(f' {frac3} ----> {frac3.getSigno()}')
+	print(frac.invertir())
+
+	print(frac**frac2)
 
 
 
