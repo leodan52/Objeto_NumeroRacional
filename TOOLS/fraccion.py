@@ -133,8 +133,8 @@ class Fraccion:
 		if other.__vector[2] == -1:
 			a, b = b, a
 
-		if int(a) - a != 0 or int(a) - a != 0:
-			return Fraccion.__Clase(signo*a/b)
+		if a % 1 != 0 or b % 1 != 0:
+			raise ValueError(f'La operación ({self})**({other}) da como resultado un número que no puede expresarse como fracción')
 		else:
 			a, b = int(a), int(b)
 
